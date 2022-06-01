@@ -20,7 +20,10 @@ section.introduce {
     color: #f9faf8;
     justify-content: space-between;
     font-size: 24px;
-    padding: 24px 20rem;
+    padding: 24px 25rem;
+    img {
+      width: 50px;
+    }
     ul {
       display: flex;
       flex-direction: row;
@@ -70,6 +73,10 @@ section.introduce {
     }
     div.intro_image {
       color: #f9faf8;
+      img {
+        width: 650px;
+        border-radius: 20px;
+      }
     }
   }
 }
@@ -91,7 +98,17 @@ section.infor {
     div.infor_image {
       display: flex;
       flex-direction: column;
-      max-width: 150px;
+      align-items: center;
+      gap: 1.5rem;
+      img {
+        width: 300px;
+        border-radius: 20px;
+      }
+      p {
+        width: 180px;
+        font-size: 20px;
+        text-align: center;
+      }
     }
   }
 }
@@ -119,14 +136,35 @@ footer {
   width: 1000px;
   height: 150px;
   margin: 5rem;
+  border-radius: 10px;
+  gap: 10px;
+  align-items: center;
   div.footertext {
-    p {
-      color: #f9faf8;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 100px;
     p.call {
       font-weight: 800;
-      font-size: 36px;
+      font-size: 24px;
+      color: #f9faf8;
     }
+    p.sign {
+      color: #e5e7eb;
+    }
+  }
+
+  button.footer_button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: white;
+    border: 1;
+    background-color: #3882f6;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-style: solid;
   }
 }
 

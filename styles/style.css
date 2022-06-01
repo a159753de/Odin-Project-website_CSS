@@ -37,7 +37,11 @@ section.introduce header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 24px;
-  padding: 24px 20rem;
+  padding: 24px 25rem;
+}
+
+section.introduce header img {
+  width: 50px;
 }
 
 section.introduce header ul {
@@ -110,6 +114,11 @@ section.introduce section.hero div.intro_image {
   color: #f9faf8;
 }
 
+section.introduce section.hero div.intro_image img {
+  width: 650px;
+  border-radius: 20px;
+}
+
 section.infor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +155,21 @@ section.infor div.information div.infor_image {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+section.infor div.information div.infor_image img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+section.infor div.information div.infor_image p {
+  width: 180px;
+  font-size: 20px;
+  text-align: center;
 }
 
 section.quote {
@@ -181,15 +204,48 @@ footer {
   width: 1000px;
   height: 150px;
   margin: 5rem;
+  border-radius: 10px;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer div.footertext p {
-  color: #f9faf8;
+footer div.footertext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 100px;
 }
 
 footer div.footertext p.call {
   font-weight: 800;
-  font-size: 36px;
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+footer div.footertext p.sign {
+  color: #e5e7eb;
+}
+
+footer button.footer_button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: white;
+  border: 1;
+  background-color: #3882f6;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border-style: solid;
 }
 
 button:hover {
